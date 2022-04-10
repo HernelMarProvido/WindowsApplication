@@ -124,7 +124,7 @@ void processMenu(HWND hWnd, WPARAM wParam)
             image->AdditionalFunction1();
             break;
         case IDM_EDIT_AD2:
-
+            image->load(current_file);
             image->AdditionalFunction2();
             break;
         case IDM_EDIT_AD3:

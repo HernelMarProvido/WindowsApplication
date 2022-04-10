@@ -107,7 +107,24 @@ void Image::rotate90cw()
 }
 void Image::AdditionalFunction2()
 {
+    int nW = 1000, nH = 200;
+    Rgb **newSize = new Rgb*[nH];
+    for(int x = 0; x < nH; x++){
+        newSize[x] = new Rgb[nW];
+        for(int y = 0;y < nW; y++){
+            newSize[x][y].r = 256;
+            newSize[x][y].g = 256;
+            newSize[x][y].b = 256;
+        }
+    }
 
+    for(int x = 0; x < nH; x++)
+        for(int y = 0;y < nW; y++)
+            newSize[x][y] = newSize[x*this->h/nH][y*this->w/nW];
+
+    pixels = *newSize;
+    this->h = nH;
+    this->w = nW;
 }
 void Image::AdditionalFunction3()
 {
