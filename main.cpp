@@ -120,7 +120,7 @@ void processMenu(HWND hWnd, WPARAM wParam)
             image->filterBlue();
             break;
         case IDM_EDIT_AD1:
-
+            image->load(current_file);
             image->AdditionalFunction1();
             break;
         case IDM_EDIT_AD2:
@@ -128,7 +128,7 @@ void processMenu(HWND hWnd, WPARAM wParam)
             image->AdditionalFunction2();
             break;
         case IDM_EDIT_AD3:
-
+            image->load(current_file);
             image->AdditionalFunction3();
             break;
         case IDM_EDIT_Reset:

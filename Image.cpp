@@ -101,33 +101,33 @@ void Image::flipVertically()
         }
     }
 }
-void Image::rotate90cw()
-{
 
-}
 void Image::AdditionalFunction2()
 {
-    int nW = 1000, nH = 200;
-    Rgb **newSize = new Rgb*[nH];
-    for(int x = 0; x < nH; x++){
-        newSize[x] = new Rgb[nW];
-        for(int y = 0;y < nW; y++){
-            newSize[x][y].r = 256;
-            newSize[x][y].g = 256;
-            newSize[x][y].b = 256;
-        }
+
+    for (int i = 0; i < w * h; ++i)
+    {
+        // Pram 0.1 - 1
+        double brightness = 0.9;
+        // This function allows me to change the image
+        // brightness, This allows me to dim or highlight
+        // my current image.
+        pixels[i].r=(pixels[i].r*0.255)*brightness;
+        pixels[i].b= (pixels[i].b*0.255)*brightness;
+        pixels[i].g = (pixels[i].g*0.255)*brightness;
+
     }
-
-    for(int x = 0; x < nH; x++)
-        for(int y = 0;y < nW; y++)
-            newSize[x][y] = newSize[x*this->h/nH][y*this->w/nW];
-
-    pixels = *newSize;
-    this->h = nH;
-    this->w = nW;
 }
 void Image::AdditionalFunction3()
 {
+
+    for(int x = 0; x < w; x++){
+        for(int y = 0; y < h/2; y++){
+            // Here I copy half of the image and flip them  creating a mirror like
+            // outcome to the image.
+            pixels[y*w+x] = pixels[x+(h-1-y)*w];
+        }
+    }
 
 }
 void Image::AdditionalFunction1()

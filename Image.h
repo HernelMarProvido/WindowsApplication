@@ -51,7 +51,7 @@ public:
     void AdditionalFunction1();
     void AdditionalFunction2();
     void AdditionalFunction3();
-    void rotate90cw();
+
 
     /*Functions used in the GUI - DO NOT MODIFY */
     Rgb* getImage();
