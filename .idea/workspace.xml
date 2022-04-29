@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="WindowsApplication" targetName="WindowsApplication" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a70786fe-9ec7-4d48-972c-18234540cb7e" name="Changes" comment="Additional Function 1, 2 and 3 finished. &#10;1: Crop image by half.&#10;2: Mirror image.&#10;3: image brightness.">
+      <change beforePath="$PROJECT_DIR$/Image.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Image.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image.h" beforeDir="false" afterPath="$PROJECT_DIR$/Image.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3.3" />
+  </component>
+  <component name="ProjectId" id="27TEgfYVYj4so5Oh5IM8ev5JYFr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="WindowsApplication" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="WindowsApplication" TARGET_NAME="WindowsApplication" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="WindowsApplication" RUN_TARGET_NAME="WindowsApplication">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a70786fe-9ec7-4d48-972c-18234540cb7e" name="Changes" comment="" />
+      <created>1649335787740</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649335787740</updated>
+      <workItem from="1649335789217" duration="6939000" />
+      <workItem from="1649345936783" duration="284000" />
+      <workItem from="1649353135970" duration="2341000" />
+      <workItem from="1649389546337" duration="6068000" />
+      <workItem from="1649403965334" duration="735000" />
+      <workItem from="1649614151224" duration="58000" />
+      <workItem from="1649614237816" duration="9000" />
+      <workItem from="1649699500888" duration="168000" />
+      <workItem from="1650195437251" duration="2934000" />
+      <workItem from="1650882347233" duration="136000" />
+      <workItem from="1650962580639" duration="579000" />
+      <workItem from="1650978099299" duration="341000" />
+      <workItem from="1651133454748" duration="288000" />
+      <workItem from="1651150024688" duration="54000" />
+      <workItem from="1651188080495" duration="11729000" />
+    </task>
+    <task id="LOCAL-00001" summary="all of filter finished. all of flip are finished">
+      <created>1649357265885</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649357265885</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Attemp on resize. does not work. need research">
+      <created>1649614192901</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649614192901</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Additional Function 1, 2 and 3 finished. &#10;1: Crop image by half.&#10;2: Mirror image.&#10;3: image brightness.">
+      <created>1650198365828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650198365828</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="all of filter finished. all of flip are finished" />
+    <MESSAGE value="Attemp on resize. does not work. need research" />
+    <MESSAGE value="Additional Function 1, 2 and 3 finished. &#10;1: Crop image by half.&#10;2: Mirror image.&#10;3: image brightness." />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional Function 1, 2 and 3 finished. &#10;1: Crop image by half.&#10;2: Mirror image.&#10;3: image brightness." />
+  </component>
+</project>
