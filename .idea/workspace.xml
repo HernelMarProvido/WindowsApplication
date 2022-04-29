@@ -14,10 +14,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a70786fe-9ec7-4d48-972c-18234540cb7e" name="Changes" comment="Additional Function 1, 2 and 3 finished. &#10;1: Crop image by half.&#10;2: Mirror image.&#10;3: image brightness.">
-      <change beforePath="$PROJECT_DIR$/Image.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Image.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image.h" beforeDir="false" afterPath="$PROJECT_DIR$/Image.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    <list default="true" id="a70786fe-9ec7-4d48-972c-18234540cb7e" name="Changes" comment="Better additional Function 1,2 and 3.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +85,8 @@
       <workItem from="1650978099299" duration="341000" />
       <workItem from="1651133454748" duration="288000" />
       <workItem from="1651150024688" duration="54000" />
-      <workItem from="1651188080495" duration="11729000" />
+      <workItem from="1651188080495" duration="12062000" />
+      <workItem from="1651249635949" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="all of filter finished. all of flip are finished">
       <created>1649357265885</created>
@@ -110,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650198365828</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Better additional Function 1,2 and 3.">
+      <created>1651200220741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651200220741</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Better additional Function 1,2 and 3.">
+      <created>1651200234689</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651200234689</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +144,7 @@
     <MESSAGE value="all of filter finished. all of flip are finished" />
     <MESSAGE value="Attemp on resize. does not work. need research" />
     <MESSAGE value="Additional Function 1, 2 and 3 finished. &#10;1: Crop image by half.&#10;2: Mirror image.&#10;3: image brightness." />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional Function 1, 2 and 3 finished. &#10;1: Crop image by half.&#10;2: Mirror image.&#10;3: image brightness." />
+    <MESSAGE value="Better additional Function 1,2 and 3." />
+    <option name="LAST_COMMIT_MESSAGE" value="Better additional Function 1,2 and 3." />
   </component>
 </project>
