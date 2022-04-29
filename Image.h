@@ -51,6 +51,9 @@ public:
     void AdditionalFunction1();
     void AdditionalFunction2();
     void AdditionalFunction3();
+    void GAMMA();
+    void AdditionalFunction4();
+
 
 
     /*Functions used in the GUI - DO NOT MODIFY */

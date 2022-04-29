@@ -104,40 +104,120 @@ void Image::flipVertically()
 
 void Image::AdditionalFunction2()
 {
+    // this function blurr the image given.
+    // here we are using 2D to filter the image giving
+    // it a blurr like effect.
 
-    for (int i = 0; i < w * h; ++i)
-    {
-        // Pram 0.1 - 1
-        double brightness = 0.9;
-        // This function allows me to change the image
-        // brightness, This allows me to dim or highlight
-        // my current image.
-        pixels[i].r=(pixels[i].r*0.255)*brightness;
-        pixels[i].b= (pixels[i].b*0.255)*brightness;
-        pixels[i].g = (pixels[i].g*0.255)*brightness;
+    // define the amount for the array.
+    #define filterWidth 5
+    #define filterHeight 5
 
-    }
+    double filter[filterHeight][filterWidth] =
+            {
+                    0, 0, 1, 0, 0,
+                    0, 1, 1, 1, 0,
+                    1, 1, 1, 1, 1,
+                    0, 1, 1, 1, 0,
+                    0, 0, 1, 0, 0,
+            };
+
+    double factor = 1.0 / 13.0; // this is a multiplier for the filter in the final results
+    double bias = 0.0; // bais is to add more brightness to the image in the final results
+
+    //Here ill be applying the filter to the image
+    for(int x = 0; x < w; x++)
+        for(int y = 0; y < h; y++)
+        {
+            double red = 0.0, green = 0.0, blue = 0.0; // temp storage to store new pixels values.
+
+            // Here im just multiplying the pixel of the image with the values
+            // of the filter which is the array.
+            for(int filterY = 0; filterY < filterHeight; filterY++)
+                for(int filterX = 0; filterX < filterWidth; filterX++)
+                {
+                    int imageX = (x - filterWidth / 2 + filterX + w) % w;
+                    int imageY = (y - filterHeight / 2 + filterY + h) % h;
+                    red += pixels[imageY * w + imageX].r * filter[filterY][filterX];
+                    green += pixels[imageY * w + imageX].g * filter[filterY][filterX];
+                    blue += pixels[imageY * w + imageX].b * filter[filterY][filterX];
+                }
+
+            //will be cutting off or shorten the values smaller than zero and larger than 255
+            pixels[y * w + x].r = min(max(int(factor * red + bias), 0), 255);
+            pixels[y * w + x].g = min(max(int(factor * green + bias), 0), 255);
+            pixels[y * w + x].b = min(max(int(factor * blue + bias), 0), 255);
+        }
 }
+
 void Image::AdditionalFunction3()
 {
+    // this function is a find edge detection
+    // here we are using 2D to filter the image giving
+    // the same as blurr but with negative array values
+    // this filter will give the image jagged egde
+    // giving it a rough looking art style.
 
-    for(int x = 0; x < w; x++){
-        for(int y = 0; y < h/2; y++){
-            // Here I copy half of the image and flip them  creating a mirror like
-            // outcome to the image.
-            pixels[y*w+x] = pixels[x+(h-1-y)*w];
+    // define the amount for the array.
+    #define filterWidth 5
+    #define filterHeight 5
+
+    double filter[filterHeight][filterWidth] =
+            {
+                    0,  0, -1,  0,  0,
+                    0,  0, -1,  0,  0,
+                    0,  0,  2,  0,  0,
+                    0,  0,  0,  0,  0,
+                    0,  0,  0,  0,  0,
+            };
+
+    double factor = 1.0; // this is a multiplier for the filter in the final results
+    double bias = 0.0; // bias is to add more brightness to the image in the final results
+
+
+    //Here apply the filter to the image
+    for(int x = 0; x < w; x++)
+        for(int y = 0; y < h; y++)
+        {
+            double red = 0.0, green = 0.0, blue = 0.0; // temp storage to store new pixels values.
+
+            // Here im just multiplying the pixel of the image with the values
+            // of the filter which is the array.
+            for(int filterY = 0; filterY < filterHeight; filterY++)
+                for(int filterX = 0; filterX < filterWidth; filterX++)
+                {
+                    int imageX = (x - filterWidth / 2 + filterX + w) % w;
+                    int imageY = (y - filterHeight / 2 + filterY + h) % h;
+                    red += pixels[imageY * w + imageX].r * filter[filterY][filterX];
+                    green += pixels[imageY * w + imageX].g * filter[filterY][filterX];
+                    blue += pixels[imageY * w + imageX].b * filter[filterY][filterX];
+                }
+
+            //truncate values smaller than zero and larger than 255
+            pixels[y * w + x].r = min(max(int(factor * red + bias), 0), 255);
+            pixels[y * w + x].g = min(max(int(factor * green + bias), 0), 255);
+            pixels[y * w + x].b = min(max(int(factor * blue + bias), 0), 255);
         }
-    }
+
 
 }
 void Image::AdditionalFunction1()
 {
-
-    for(int i = 0; i < h; i++){
-        for(int x = 0; x < w/2; x++){
-            pixels[i*w+x] = 0;
+    // This Function turns the image negative
+    // by subtracting the values of RGB - 255 we get new pixel
+        for (int i = 0; i < h*w; ++i) { // we loop the new pixel
+            pixels[i].r = 255-pixels[i].r; // r new pixel value should be 155
+            pixels[i].b = 255-pixels[i].b; // b new pixel values should be 55
+            pixels[i].g = 255-pixels[i].g; // g new pixel values should be 105
         }
-    }
+}
+
+void Image::GAMMA()
+{
+
+}
+void Image::AdditionalFunction4()
+{
+
 }
 
 
